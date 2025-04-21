@@ -282,3 +282,7 @@
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
+@media (max-width: 500px) {
+  .hero-text h2 {
+    font-size: 2rem;
+  }
