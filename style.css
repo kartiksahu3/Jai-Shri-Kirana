@@ -54,6 +54,7 @@
     color: white;
     text-align: center;
     position: relative;
+    background-attachment: srcroll;
   }
   
   .hero::after {
@@ -286,3 +287,18 @@
   .hero-text h2 {
     font-size: 2rem;
   }
+@media (max-width: 600px) {
+  .hero {
+    background-position: top center;
+    background-size: contain; /* shrink image to fit mobile */
+    height: 70vh;
+  }
+
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
